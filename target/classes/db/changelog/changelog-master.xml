@@ -53,4 +53,10 @@
         </createTable>
     </changeSet>
 
+    <changeSet id="5" author="root">
+        <addColumn tableName="branch">
+            <column name="institutionID" type="BIGINT"/>
+        </addColumn>
+    </changeSet>
+
 </databaseChangeLog>
