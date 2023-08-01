@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.23.xsd">
+
+    <changeSet id="1" author="root">
+        <createTable tableName="User">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="firstName" type="VARCHAR(50)"/>
+            <column name="lastName" type="VARCHAR(50)"/>
+            <column name="userName" type="VARCHAR(50)"/>
+            <column name="password" type="VARCHAR(50)"/>
+            <column name="email" type="VARCHAR(100)"/>
+            <column name="institutionID" type="BIGINT"/>
+            <column name="branchID" type="BIGINT"/>
+            <column name="roleID" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="root">
+        <createTable tableName="Institution">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(50)"/>
+            <column name="code" type="VARCHAR(50)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="3" author="root">
+        <createTable tableName="Branch">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(50)"/>
+            <column name="code" type="VARCHAR(50)"/>
+            <column name="institutionID" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="4" author="root">
+        <createTable tableName="Role">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(50)"/>
+            <column name="code" type="VARCHAR(50)"/>
+            <column name="description" type="VARCHAR(50)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
