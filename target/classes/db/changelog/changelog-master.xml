@@ -21,4 +21,36 @@
         </createTable>
     </changeSet>
 
+    <changeSet id="2" author="root">
+        <createTable tableName="Institution">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(50)"/>
+            <column name="code" type="VARCHAR(50)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="3" author="root">
+        <createTable tableName="Branch">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(50)"/>
+            <column name="code" type="VARCHAR(50)"/>
+            <column name="institutionID" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="4" author="root">
+        <createTable tableName="Role">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(50)"/>
+            <column name="code" type="VARCHAR(50)"/>
+            <column name="description" type="VARCHAR(50)"/>
+        </createTable>
+    </changeSet>
+
 </databaseChangeLog>
