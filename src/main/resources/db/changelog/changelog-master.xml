@@ -59,4 +59,42 @@
         </addColumn>
     </changeSet>
 
+    <changeSet id="6" author="root">
+        <addForeignKeyConstraint
+                baseTableName="User"
+                baseColumnNames="institutionid"
+                constraintName="fk_user_institution"
+                referencedTableName="institution"
+                referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="7" author="root">
+        <addForeignKeyConstraint
+                baseTableName="user"
+                baseColumnNames="roleid"
+                constraintName="fk_user_role"
+                referencedTableName="role"
+                referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="8" author="root">
+        <addForeignKeyConstraint
+                baseTableName="user"
+                baseColumnNames="branchid"
+                constraintName="fk_user_branch"
+                referencedTableName="branch"
+                referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="9" author="root">
+        <addForeignKeyConstraint
+                baseTableName="branch"
+                baseColumnNames="institutionID"
+                constraintName="fk_branch_institution"
+                referencedTableName="institution"
+                referencedColumnNames="id"/>
+    </changeSet>
+
+
+
+
 </databaseChangeLog>

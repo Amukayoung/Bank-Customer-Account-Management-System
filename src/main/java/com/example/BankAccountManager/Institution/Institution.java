@@ -1,7 +1,10 @@
 package com.example.BankAccountManager.Institution;
 
+import com.example.BankAccountManager.User.User;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Institution {
@@ -9,6 +12,9 @@ public class Institution {
     private Long id;
     private String name;
     private String code;
+    @OneToMany
+    private User user;
+
 
     public Institution() {
 
