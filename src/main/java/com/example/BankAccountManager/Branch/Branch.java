@@ -1,7 +1,10 @@
 package com.example.BankAccountManager.Branch;
 
+import com.example.BankAccountManager.Institution.Institution;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Branch {
@@ -10,6 +13,9 @@ public class Branch {
     private  String name;
     private String code;
     private Long institutionID;
+    @ManyToOne
+    private Institution institution;
+
 
     public Branch() {
     }

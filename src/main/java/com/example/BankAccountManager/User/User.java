@@ -1,7 +1,12 @@
 package com.example.BankAccountManager.User;
 
+import com.example.BankAccountManager.Institution.Institution;
+import com.example.BankAccountManager.Role.Role;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import java.util.Arrays;
 @Entity
 public class User {
@@ -21,6 +26,10 @@ public class User {
     private Long roleID;
 
     private Long branchID;
+    @ManyToOne
+    private Institution institution;
+    @OneToMany
+    private Role role;
 
     public User() {
 
