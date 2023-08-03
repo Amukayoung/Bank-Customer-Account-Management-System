@@ -28,7 +28,7 @@ public class User {
     private Long branchID;
     @ManyToOne
     private Institution institution;
-    @OneToMany
+    @ManyToOne
     private Role role;
 
     public User() {
