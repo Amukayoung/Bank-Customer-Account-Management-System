@@ -5,6 +5,7 @@ import com.example.BankAccountManager.User.User;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 public class Institution {
@@ -12,12 +13,11 @@ public class Institution {
     private Long id;
     private String name;
     private String code;
-    @OneToMany
-    private User user;
 
+    @OneToMany
+    private List<User> users;
 
     public Institution() {
-
     }
 
     public Institution(Long id, String name, String code) {
@@ -53,6 +53,14 @@ public class Institution {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public List<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<User> users) {
+        this.users = users;
     }
 
     @Override
