@@ -9,7 +9,7 @@ Database design URL:https://dbdiagram.io/d/64c8b6f502bd1c4a5e082f39
 
 ![Screen Shot](./src/main/resources/static/DatabaseDesign.png)
 
-# How to setup the system
+# Setting up the system
 
 Via GitHub Repo: 
 1. Clone or Download this Repo
