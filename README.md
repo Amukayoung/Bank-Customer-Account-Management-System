@@ -15,4 +15,4 @@ From GitHub Repo:
 1. Clone or Download this Repo
 2. setup you MySQL server and create a database called BACMSDB
 3. Using Intelij or your prefered IDE build and run the application.
-4. Booom you in. Follow the Api Documentation for guidance URL: https://documenter.getpostman.com/view/21029286/2s9XxwwuF5
+4. There you go. Follow the Api Documentation for guidance URL: https://documenter.getpostman.com/view/21029286/2s9XxwwuF5
