@@ -1,4 +1,4 @@
-# Bank-Customer-Account-Management-App
+# Bank Customer Account Management App
 
 
 Banking Customer Management System is a system through which bank customers,employee and other corporate users can all interface together at the same point while segregating role and permissions. The system will manage different types of users, such as bank customers (Type A Users) who own the accounts and manages transactions, bank employees (Type B Users) who help in other management duties, and corporate clients (Type C Users) who in this case can be like Federal Bank or any other higher authority who may wants to see users statistics. All the system users have different roles with role specific code the can be assigned to them which help to segregate different roles. The system will allow users to access various banking services and functionalities based on their roles and institutions.
